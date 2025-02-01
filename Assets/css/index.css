@@ -520,7 +520,7 @@ footer {
 
 @media screen and (max-width:300px){ 
         .logo>.material-symbols-outlined{
-                
+                display: flex;
         }
         *{
             border: 0;
