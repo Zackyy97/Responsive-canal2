@@ -26,195 +26,214 @@ body{
     flex-direction: column;
     gap:1.7rem;
 }
-    /* tout le header */
+:root{
+
+
+    --primary-font-family:"IBM Plex Sans Hebrew", sans-serif;
+    --secondary-font-family:"Open Sans", sans-serif;
+    --textiary-font-family: "Inter", sans-serif;
+    --logo-color:#79AC78;
+    --bg-color:#618264;
+    --secondary-color-font:#443434;
+    --webkit-margin-start:left 64px;
+}
+body{
+width:100vw;
+overflow-x: hidden;
+font-family: var(--font-family);
+display: flex;
+flex-direction: column;
+gap:1.7rem;
+}
+/* tout le header */
 header{
-    display: flex;
-    align-content: center;
-    justify-content:space-between;
+display: flex;
+align-content: center;
+justify-content:space-between;
 }
 .ul_nav{
-    margin-top: 37px;
-    font-family: var(--primary-font-family);
-    margin-left: 9rem;
-    font-size: 28px;
-    display: flex;
-    gap: 3rem;
-    list-style: none;
+margin-top: 37px;
+font-family: var(--primary-font-family);
+margin-left: 9rem;
+font-size: 28px;
+display: flex;
+gap: 3rem;
+list-style: none;
 }
 .ul_nav>li>a{
-    text-decoration: none;
-    color: #000;
+text-decoration: none;
+color: #000;
 }
 .ul_nav>li>a:hover{
-    color:var(--logo-color);
-    text-decoration: underline;   
+color:var(--logo-color);
+text-decoration: underline;   
 }
 
 /*  when coding they is a norm to follow that is the block element modofier(BEM) */
 
 .ul_nav>li>:hover::after{
-    width: 100%;
+width: 100%;
 }
- 
- /* BOX SISING */
+
+/* BOX SISING */
 .logo{
-    margin-top: 4px;
-    margin-left: 48px;
+margin-top: 4px;
+margin-left: 48px;
 }
 .logo>a>img{
-    height: 89px;
-    width:113px;
+height: 89px;
+width:113px;
 } 
 .logo2{
-    padding-left: 3.3rem;
-    margin: 2rem 2.8rem 1.5rem 8rem ;
-    color: white;
-    border: #618264 solid 1.4rem;
-    border-radius: 3rem;
-    background-color:#618264;
-    width: 9rem;
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 1.3rem;
-    
-}
-         /* secton une image de nganou et  */
-.container{
-    display: flex;
-    margin: 0rem 2rem;
-    gap: 3rem;
-    height: 100%;
-    margin-bottom: 8rem;
-}
-     /* image de droite du bat de header */
+padding-left: 3.3rem;
+margin: 2rem 2.8rem 1.5rem 8rem ;
+color: white;
+border: #618264 solid 1.4rem;
+border-radius: 3rem;
+background-color:#618264;
+width: 9rem;
+font-family: var(--secondary-font-family);
+font-weight: 700;
+font-size: 1.3rem;
 
- header>.material-symbols-outlined{
-        display: none;
+}
+ /* secton une image de nganou et  */
+.container{
+display: flex;
+margin: 0rem 2rem;
+gap: 3rem;
+height: 100%;
+margin-bottom: 8rem;
+}
+/* image de droite du bat de header */
+
+header>.material-symbols-outlined{
+display: none;
 }
 .child1{
-    flex: 1.7;
-    background-image: url("../img/nganou.svg");
-    background-size: cover;
-    border-radius: 1rem;
-    
+flex: 1.7;
+background-image: url("../img/nganou.svg");
+background-size: cover;
+border-radius: 1rem;
+
 }
 .description_img{
-    margin-top: 40rem;
-    background-size: cover;
-    display: flex;
-    background:  linear-gradient(to bottom, rgba(181, 178, 178, 0), rgba(22, 21, 21, 0.968));
-    padding: 1rem;
+margin-top: 40rem;
+background-size: cover;
+display: flex;
+background:  linear-gradient(to bottom, rgba(181, 178, 178, 0), rgba(22, 21, 21, 0.968));
+padding: 1rem;
 }
 .bar{
-    border: var(--bg-color) solid 0.6rem;
-    height: 9rem;
-    border-radius: 2rem;
-    margin-left: 1rem;
+border: var(--bg-color) solid 0.6rem;
+height: 9rem;
+border-radius: 2rem;
+margin-left: 1rem;
 }
 .text_description>h2{
-    margin-left: 2rem;
-    font-size: 2.5rem;
-    margin-right: 16rem;
-    font-weight: 700;
-    font-family: var(--primary-font-family);
-    color: #ffffff;
-    
+margin-left: 2rem;
+font-size: 2.5rem;
+margin-right: 16rem;
+font-weight: 700;
+font-family: var(--primary-font-family);
+color: #ffffff;
+
 }
 .text_description>h6{
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 400;size: 2rem;
-    font-family: var(--secondary-font-family);
+margin-left: 2rem;
+font-size: 1.5rem;
+color: white;
+font-weight: 400;size: 2rem;
+font-family: var(--secondary-font-family);
 }
 .child2{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-    background-color: #a59d51;
-    justify-content:space-around;
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 2.2rem;
+background-color: #a59d51;
+justify-content:space-around;
 
 }
 .child1>.b{
-    display: flex;
+display: flex;
 }
 .carretext{
-    border-left: 13px solid  #618264;
-    padding: 1rem;
-    font-family: var(--secondary-font-family);
-    font-weight: 600;
-    line-height: 26px;
-    size: 20px;
+border-left: 13px solid  #618264;
+padding: 1rem;
+font-family: var(--secondary-font-family);
+font-weight: 600;
+line-height: 26px;
+size: 20px;
 }
 .b1{
-    display: flex;
-    flex-direction: row;
-    gap: 17px;
+display: flex;
+flex-direction: row;
+gap: 17px;
 }
 .b1>.imgtext1{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex: 1;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+flex: 1;
 }
 .b1>.img1{
-    flex: 1;
+flex: 1;
 
 }
 .b1>.imgtext1>h1{
-    font-family: var(--primary-font-family);
-    font-weight: 600;
-    line-height: 26px;
-    font-size: 20px;
+font-family: var(--primary-font-family);
+font-weight: 600;
+line-height: 26px;
+font-size: 20px;
 }
 .b1>.imgtext1>h3{
-        font-family: var(--secondary-font-family);
-        font-weight:400;
-        size: 14px;
-        line-height: 19.07px;
+font-family: var(--secondary-font-family);
+font-weight:400;
+size: 14px;
+line-height: 19.07px;
 }
 
 /* 2 */
 .b2{
-    display: flex;
-    flex-direction: row;
-    gap: 17px;
+display: flex;
+flex-direction: row;
+gap: 17px;
 }
 .b2>.imgtext2{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
 }
 .b2>.imgtext2>h1{
-    font-family: var(--primary-font-family);
-    font-weight: 600;
-    line-height: 26px;
-    font-size: 20px;
+font-family: var(--primary-font-family);
+font-weight: 600;
+line-height: 26px;
+font-size: 20px;
 }
 .b2>.imgtext2>h3{
-        font-family: var(--secondary-font-family);
-        font-weight:400;
-        size: 14px;
-        line-height: 19.07px;
+font-family: var(--secondary-font-family);
+font-weight:400;
+size: 14px;
+line-height: 19.07px;
 }
 /* 3 */
 .b3{
-    display: flex;
-    flex-direction: row;
-    gap: 17px;
+display: flex;
+flex-direction: row;
+gap: 17px;
 }
 .b3>.imgtext3>h1{
-    font-family: var(--primary-font-family);
-    font-weight: 600;
-    line-height: 26px;
-    font-size: 20px;
+font-family: var(--primary-font-family);
+font-weight: 600;
+line-height: 26px;
+font-size: 20px;
 }
 .b3>.imgtext3>h3{
-        font-family: var(--secondary-font-family);
-        font-weight:400;
-        size: 14px;
-        line-height: 19.07px;
+font-family: var(--secondary-font-family);
+font-weight:400;
+size: 14px;
+line-height: 19.07px;
 }
 
 .container2{
